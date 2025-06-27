@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Bits</title>
+    <link rel="stylesheet" href="neural.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <header>
+    <div class="logo">NeuralBits</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Smarter Healthcare Starts Here</h1>
+    <p>AI-driven, cloud-powered health solutions used by 500+ hospitals and 10,000+ doctors across India.</p>
+    <a href="#contact">Talk to Us</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Who We Are</h2>
+    <div class="about">
+      <img src="img.png"  alt="NeuralBits Product">
+      <div class="about-text">
+        <p>Founded in 2013 and based in Mumbai, NeuralBits Technologies designs intelligent digital systems for hospitals, clinics, and medical research. Our cloud-native applications simplify OPD workflows, in-patient tracking, diet planning, ethics committee management, and more — all accessible securely and remotely.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <h3>Presco OPD</h3>
+        <p>Paperless OPD experience with e-prescriptions, billing, analytics, and history tracking.</p>
+      </div>
+      <div class="product-card">
+        <h3>Medi Vault</h3>
+        <p>Cloud-based EHR system to store, manage and retrieve medical files securely.</p>
+      </div>
+      <div class="product-card">
+        <h3>IEC Admin</h3>
+        <p>Automate IEC workflows with document tracking, audit logs, and compliance tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Let's Connect</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 NeuralBits Technologies Pvt. Ltd. | Visit <a href="https://www.neuralbits.com" target="_blank">neuralbits.com</a>
+  </footer>
+    
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    const name = form.querySelector("input[type='text']");
+    const email = form.querySelector("input[type='email']");
+
+    if (!name.value || !email.value) {
+      e.preventDefault(); // Stop form from submitting
+      alert("Please fill in both name and email.");
+    }
+  });
+</script>
+
+
+</body>
+</html>
